@@ -14,14 +14,14 @@ html, body{
 }
 
 #page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw;
 }
 nav{
-    padding: 2vw 2vw;
+    padding: 2vw 0vw;
     width: 100%;
     /* background-color: red; */
     display: flex;
@@ -88,5 +88,86 @@ nav{
     line-height: 2vw;
 }
 #center h1{
+    font-size: 10vw;
+    text-align: right;
+    line-height: 8vw;
     
+}
+#page1 video{
+    border-radius: 30px;
+    margin-top: 4vw;
+    width: 100%;
+
+}
+#hero-shape{
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    /* background-color: aqua; */
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%; */
+    right: 0;
+    top: 65vh;
+    /* filter: blur(20px); */
+
+}
+#hero-1{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+
+}
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background-color: aqua;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+   
+
+}
+#hero-3{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes anime1{
+    from{
+        transform: translate(-10%,10%);
+    }
+    to{
+        transform: translateX(10%,-10%);
+    }
 }
