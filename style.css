@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'seo';
+    src: url('./neue-haas-grotesk-display-pro-cufonfonts/NeueHaasDisplayMediu.ttf');
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
+    font-family: 'seo';
 }
 html, body{
     height: 100%;
@@ -14,6 +18,7 @@ html, body{
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
+    padding: 0 2vw;
 }
 nav{
     padding: 2vw 2vw;
@@ -30,9 +35,58 @@ nav{
 
 }
 .nav-part2 h4{
+    position: relative;
     padding: 10px 20px;
     border: 1px solid #4e4d4d;
     border-radius: 50px;
     font-weight: 500;
     color: rgb(30, 28, 28);
+    font-size: 18px;
+    transition: all ease 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nav-part2 h4::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    
+}
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+    
+}
+.nav-part2 h4 a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+.nav-part2 h4:hover a{
+    color: white;
+}
+#center{
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+#center h1{
+    
 }
