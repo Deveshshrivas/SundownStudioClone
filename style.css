@@ -11,6 +11,7 @@
 html, body{
     height: 100%;
     width: 100%;
+    
 }
 
 #page1{
@@ -19,6 +20,8 @@ html, body{
     background-color: #EFEAE3;
     position: relative;
     padding: 0 2vw;
+    overflow: hidden;
+    
 }
 nav{
     padding: 2vw 0vw;
@@ -81,6 +84,7 @@ nav{
     justify-content: space-between;
     border-bottom: 1px solid #0000003c;
     padding-bottom: 2.5vw;
+    
 }
 #left h3 {
     width: 25vw;
@@ -94,6 +98,7 @@ nav{
     
 }
 #page1 video{
+    position: relative;
     border-radius: 30px;
     margin-top: 4vw;
     width: 100%;
@@ -137,7 +142,7 @@ nav{
     filter: blur(20px);
     position: absolute;
     position: absolute;
-    animation-name: anime1;
+    animation-name: anime2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -148,10 +153,10 @@ nav{
 #hero-3{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background: linear-gradient(#FE320A,#fe330af9);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    filter: blur(20px);
+    filter: blur(10px);
     border-radius: 50%;
     position: absolute;
     animation-name: anime1;
@@ -165,9 +170,17 @@ nav{
 
 @keyframes anime1{
     from{
-        transform: translate(-10%,10%);
+        transform: translate(55%,-3%);
     }
     to{
-        transform: translateX(10%,-10%);
+        transform: translateX(0%,10%);
+    }
+}
+@keyframes anime2{
+    from{
+        transform: translate(5,-5%);
+    }
+    to{
+        transform: translateX(-20%,20%);
     }
 }
